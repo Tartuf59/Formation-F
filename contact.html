@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact – Formation-F</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Contacte Formation-F</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="cours.html">Formations</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Entrer en contact</h2>
+      <p>Une question, un retour ? Utilise ce formulaire, je te répondrai vite.</p>
+
+      <form action="https://formspree.io/f/ton-id-ici" method="POST">
+        <label for="name">Nom complet :</label><br />
+        <input type="text" id="name" name="name" required placeholder="Ton nom" /><br /><br />
+
+        <label for="email">Adresse e-mail :</label><br />
+        <input type="email" id="email" name="email" required placeholder="exemple@domaine.com" /><br /><br />
+
+        <label for="message">Message :</label><br />
+        <textarea id="message" name="message" rows="6" required placeholder="Écris ton message ici..."></textarea><br /><br />
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tom. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
