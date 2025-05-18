@@ -89,4 +89,31 @@ footer {
     margin: 20px 10px;
     padding: 15px;
   }
+  .cours-card {
+  background-color: #ffffff;
+  border-left: 5px solid #1a73e8;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.cours-card:hover {
+  transform: translateY(-3px);
+}
+
+.cours-card h3 {
+  margin-bottom: 8px;
+  font-size: 1.4rem;
+}
+
+.cours-card a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.cours-card a:hover {
+  text-decoration: underline;
+}
 }
