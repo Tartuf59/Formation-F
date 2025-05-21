@@ -116,4 +116,8 @@ footer {
 .cours-card a:hover {
   text-decoration: underline;
 }
+  .fit-picture {
+  width: 250px;
+}
+
 }
