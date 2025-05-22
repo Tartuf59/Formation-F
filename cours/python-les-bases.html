@@ -66,13 +66,107 @@ Cela ouvrira l'interface interactive de Python. Tu devrais voir >>>, ce qui sign
 est prêt. Essaie d'écrire :
 print("Hello, world!")
 Si tu vois Hello, world!, tu es prêt !</p>
-      <h4>Astuce : Installer et configurer Python avec Sublime Text</h4>
+      <h3>Astuce : Installer et configurer Python avec Sublime Text</h3>
       <p>Sublime Text est un éditeur de texte léger et très populaire pour coder. Voici comment
 l'utiliser pour programmer en Python.</p>
       <h5>Étape 1 : Télécharge Sublime Text</h5>
       <p>Va sur le site officiel de Sublime Text : https://www.sublimetext.com/.
 Clique sur "Download" et choisis la version adaptée à ton système d’exploitation (Windows,
 macOS ou Linux).</p>
+      <h5>Étape 2 : Installe Sublime Text</h5>
+      <p>Lance le fichier téléchargé pour démarrer l’installation.
+Suis les étapes de l’assistant d’installation. Une fois terminé, ouvre Sublime Text.</p>
+      <h5>Étape 3 : Configure Sublime Text pour Python</h5>
+      <p>Ajoute Python à Sublime Text :
+Dans Sublime Text, ouvre le menu Tools > Build System > New Build System.
+Un fichier s'ouvre. Remplace son contenu par :
+{
+"cmd": ["python3", "-u", "$file"],
+"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+"selector": "source.python"
+}
+Enregistre le fichier avec le nom « Python3.sublime-build ».
+Choisis Python comme système de build :
+Dans le menu Tools > Build System, sélectionne Python.</p>
+      <h5>Étape 4 : Teste ton installation</h5>
+      <p>Dans Sublime Text, crée un nouveau fichier : File > New File.
+Enregistre-le avec une extension .py (par exemple, test.py).
+Écris le code suivant :
+print("Bienvenue dans Python avec Sublime Text!") # "print sert à écrire dans le résultat"
+# Ce-ci est un commentaire qui n’affecte pas le code on le commande avec un "#"
+Appuie sur Ctrl + B (ou Cmd + B sur macOS) pour exécuter ton programme.
+Si tout est bien configuré, le message apparaîtra dans le panneau de sortie en bas.</p>
+      <h3>Utilisé PIP</h3>
+      <p>Si tu veux utiliser des bibliothèques supplémentaires comme math, pandas ou numpy, utilise
+pip (le gestionnaire de paquets Python).
+Ouvre un terminal ou une invite de commande.
+Tape :
+pip install nom_de_la_bibliothèque
+Par exemple, pour installer pandas :
+pip install pandas
+Exemple : Utiliser une bibliothèque en Python
+Python propose une bibliothèque standard incluse par défaut.
+Exemple simple avec math :
+import math # Importation de la bibliothèque math
+# Utilisation d'une fonction de la bibliothèque
+resultat = math.sqrt(16) # Calcul de la racine carrée de 16
+print(resultat) # Affiche : 4.0
+Exécute ce code dans Sublime Text pour vérifier que tout fonctionne.
+Bibliothèques populaires en Python
+Manipulation des données :
+pandas : Travailler avec des tableaux de données.
+numpy : Manipuler des ensembles de données et faire des calculs mathématiques avancés.
+Graphiques :
+matplotlib et seaborn : Pour tracer des graphiques.
+Développement web :
+flask et django : Pour créer des applications web.
+Jeux :
+pygame : Pour créer des jeux simples en 2D.</p>
+      <h3>Des liens utiles</h3>
+      <h4>Introduction à Python et installation</h4>
+      <p>Site officiel de Python :
+Téléchargement de Python.
+Documentation officielle pour débutants et avancés.
+Real Python :
+Guide pour débutants.
+Tutoriels étape par étape sur l’installation et les bases de Python.
+W3Schools Python :
+Introduction claire avec des exemples interactifs.
+Bonne ressource pour apprendre les bases (print, variables, conditions, boucles).</p>
+      <h4>Apprentissage progressif</h4>
+      <p>FreeCodeCamp Python
+Cours gratuit pour apprendre Python avec des exercices pratiques.
+Programme structuré, idéal pour débutants.
+SoloLearn Python :
+Une application interactive pour apprendre Python en s'amusant.
+Disponible sur mobile et web.
+Codecademy Python :
+Cours interactif avec des exercices de codage en ligne.
+Très accessible pour les débutants (version gratuite et premium).</p>
+      <h4>Exercices pratiques et projets</h4>
+      <p>HackerRank Python :
+Série de défis Python pour pratiquer les bases et résoudre des problèmes.
+Exercism Python :
+Plateforme pour pratiquer des exercices Python et obtenir des retours de mentors.</p>
+      <h4>Documentation et références</h4>
+      <p>GeeksForGeeks Python :
+Des articles détaillés sur les concepts de base et avancés de Python.
+Programiz Python :
+Idéal pour les explications claires sur des sujets comme les conditions, boucles, fonctions et
+listes.
+Python Tutor :
+Un outil visuel pour exécuter et comprendre ton code Python.</p>
+      <h4>Tutoriels vidéo</h4>
+      <p>YouTube - Apprendre Python :
+Chaînes recommandées :
+Graven (pour débutants francophones).
+Tech With Tim (contenu anglophone).
+OpenClassrooms Python :
+Cours complet gratuit sur Python avec une approche progressive.</p>
+      <h5>Ces ressources couvrent l’installation de Python, les bases, la programmation et des
+exercices pratiques.</h5>
+      <h2>Découverte des bases en programmation avec
+Python :</h2>
     </section>
   </main>
     <section>
