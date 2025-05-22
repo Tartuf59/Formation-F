@@ -11,4 +11,4 @@ Bienvenue sur le dépôt de mon site web de formations dédié à l'informatique
 📬 Contact, Pour toute question ou collaboration :
 📧 Frn.tom59@gmail.com
 
-© 2025 Tartuf59
+© 2025 Tom.
