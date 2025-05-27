@@ -197,6 +197,125 @@ print(resultat)</code></pre>
     <button class="copy-btn" data-copy="https://openclassrooms.com/fr/courses/6204541-initiez-vous-a-python">Copier</button>
   </li>
 </ul>
+<section class="formation-section">
+  <h2>Débutant – Découverte des bases en programmation avec Python</h2>
+
+  <div class="code-container">
+    <p>Ouvre Sublime Text :</p>
+    <ul>
+      <li>Lance Sublime Text.</li>
+      <li>Ouvre un nouveau fichier et sauvegarde-le avec l'extension <code>.py</code> (par exemple : <code>premier_programme.py</code>).</li>
+    </ul>
+  </div>
+
+  <div class="code-container">
+    <p>Prêt ? Maintenant, écris ce code simple dans ton fichier :</p>
+    <pre><code class="language-python"># Afficher un message
+print("Bonjour, le monde !")</code></pre>
+    <button class="copy-btn" data-copy='# Afficher un message\nprint("Bonjour, le monde !")'>Copier</button>
+  </div>
+
+  <div class="code-container explanation">
+    <p><strong>Explication :</strong></p>
+    <ul>
+      <li><code>print</code> : Fonction qui affiche du texte ou des infos à l'écran.</li>
+      <li>Le texte entre guillemets est le message à afficher.</li>
+    </ul>
+  </div>
+
+  <div class="code-container">
+    <p><strong>Un programme de calcul :</strong></p>
+    <pre><code class="language-python"># Faire un calcul simple
+print(5 + 3)
+print(10 * 2)
+print(15 / 3)</code></pre>
+    <button class="copy-btn" data-copy='# Faire un calcul simple\nprint(5 + 3)\nprint(10 * 2)\nprint(15 / 3)'>Copier</button>
+  </div>
+
+  <div class="code-container explanation">
+    <p><strong>Explication :</strong></p>
+    <ul>
+      <li><code>+</code> : Addition</li>
+      <li><code>*</code> : Multiplication</li>
+      <li><code>/</code> : Division</li>
+    </ul>
+  </div>
+
+  <h3>es variables et les types de données</h3>
+  <div class="code-container">
+    <pre><code class="language-python">nom = "Alice"
+age = 25
+taille = 1.68
+is_student = True
+
+print("Nom :", nom)
+print("Âge :", age)
+print("Taille :", taille)
+print("Student :", is_student)</code></pre>
+    <button class="copy-btn" data-copy='nom = "Alice"\nage = 25\ntaille = 1.68\nis_student = True\n\nprint("Nom :", nom)\nprint("Âge :", age)\nprint("Taille :", taille)\nprint("Student :", is_student)'>Copier</button>
+  </div>
+
+  <div class="code-container explanation">
+    <p><strong>Types de données :</strong></p>
+    <ul>
+      <li><code>int</code> : entier, ex. <code>42</code></li>
+      <li><code>float</code> : nombre décimal, ex. <code>3.14</code></li>
+      <li><code>str</code> : chaîne de caractères, ex. <code>"Bonjour"</code></li>
+      <li><code>bool</code> : booléen, ex. <code>True</code> ou <code>False</code></li>
+    </ul>
+  </div>
+
+  <h3>Exercice interactif</h3>
+  <div class="code-container">
+    <p>Crée une variable pour :</p>
+    <ul>
+      <li>Ton prénom</li>
+      <li>Ton âge</li>
+      <li>Une réponse booléenne si tu aimes Python</li>
+    </ul>
+    <p>Puis affiche ces informations.</p>
+  </div>
+
+  <div class="code-container">
+    <p><strong>Solution :</strong></p>
+    <pre><code class="language-python"># Déclaration des variables
+mon_prenom = "Tom"
+mon_age = 20
+j_aime_python = True
+
+# Affichage des informations
+print("Prénom :", mon_prenom)
+print("Âge :", mon_age)
+print("Aime Python :", j_aime_python)</code></pre>
+    <button class="copy-btn" data-copy='mon_prenom = "Tom"\nmon_age = 20\nj_aime_python = True\n\nprint("Prénom :", mon_prenom)\nprint("Âge :", mon_age)\nprint("Aime Python :", j_aime_python)'>Copier</button>
+  </div>
+
+  <div class="quiz-container">
+    <h4>Quiz rapide :</h4>
+    <p>Quel est le type de donnée de la variable suivante ?</p>
+    <pre><code>is_happy = False</code></pre>
+    <ul class="quiz-options">
+      <li><button onclick="checkQuiz(this, 'A')">A. int</button></li>
+      <li><button onclick="checkQuiz(this, 'B')">B. bool</button></li>
+      <li><button onclick="checkQuiz(this, 'C')">C. str</button></li>
+      <li><button onclick="checkQuiz(this, 'D')">D. float</button></li>
+    </ul>
+    <p class="quiz-feedback"></p>
+  </div>
+</section>
+
+<script>
+function checkQuiz(button, answer) {
+  const feedback = button.closest('.quiz-container').querySelector('.quiz-feedback');
+  if (answer === 'B') {
+    feedback.textContent = '✅ Bonne réponse : bool (valeur True ou False)';
+    feedback.style.color = 'green';
+  } else {
+    feedback.textContent = '❌ Mauvaise réponse. Essaie encore !';
+    feedback.style.color = 'red';
+  }
+}
+</script>
 
     </section>
 
