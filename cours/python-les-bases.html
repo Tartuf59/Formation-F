@@ -2,6 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Python : Les bases – Formation-F</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
@@ -19,176 +20,152 @@
     <section>
       <h2>Introduction à Python</h2>
       <p>Bienvenue dans cette formation qui te permettra d'apprendre les bases du langage Python, l’un des langages les plus populaires et faciles à prendre en main.</p>
-      <h3>Tu peux la téléchargé <a href="https://mega.nz/file/Sew3CBYD#l_WgKkC7PYisB6YY3kmKzd1sX-eAajT6GhqCmfYpVNg">ici</a> ou la suivre juste en dessous.</h3>
+      <p>Tu peux la télécharger <a href="https://mega.nz/file/Sew3CBYD#l_WgKkC7PYisB6YY3kmKzd1sX-eAajT6GhqCmfYpVNg">ici</a> ou la suivre juste en dessous.</p>
     </section>
 
     <section>
       <h2>Ce que tu vas apprendre</h2>
       <ul>
-  <li>Installer Python et vérifier son installation</li>
-  <li>Configurer Sublime Text pour coder en Python</li>
-  <li>Utiliser pip pour installer des bibliothèques Python</li>
-  <li>Comprendre les variables et types de données</li>
-  <li>Utiliser les conditions (if, elif, else)</li>
-  <li>Maîtriser les boucles (for, while)</li>
-  <li>Créer et utiliser des fonctions</li>
-  <li>Manipuler les listes</li>
-  <li>Utiliser des bibliothèques standards (math, random)</li>
-  <li>Manipuler les fichiers (lecture, écriture, ajout)</li>
-  <li>Exécuter et tester des programmes complets en Python</li>
-</ul>
-      <h2>Apprendre Python :</h2>
-      <h3>Introduction</h3>
-      <h4>Installer Python :</h4>
-      <h5>Étape 1 : Télécharge Python</h5>
-      <p>Va sur le site officiel de Python : https://www.python.org/downloads/.
-Clique sur le bouton Download Python [version] (la version sera probablement la dernière
-version stable, comme 3.x.x).
-Une fois le fichier téléchargé, ouvre-le pour lancer l'installation.</p>
-      <h5>Étape 2 : Installe Python</h5>
-      <p>Important : Avant de cliquer sur "Install Now", coche la case "Add Python,exe to PATH".
-Cela te permettra d'utiliser Python facilement depuis n'importe où.
-Clique sur "Install Now" et laisse l’installation se terminer.
-Une fois l’installation terminée, clique sur Close.</p>
-      <h5>Étape 3 : Vérifie l’installation</h5>
-      <p>Ouvre un terminal (ou invite de commande) :
-Sur Windows : Appuie sur Win + R, tape cmd, puis appuie sur Entrée.
-Sur Mac/Linux : Ouvre le Terminal depuis le menu.
-Tape la commande suivante et appuie sur Entrée :
-python --version
-ou
-python3 --version
-Si tu vois une version comme Python 3,13,1, Python est bien installé !</p>
-      <h5>Étape 4 : Test rapide</h5>
-      <p>Toujours dans le terminal, tape la commande suivante :
-python
-Cela ouvrira l'interface interactive de Python. Tu devrais voir >>>, ce qui signifie que Python
-est prêt. Essaie d'écrire :
-print("Hello, world!")
-Si tu vois Hello, world!, tu es prêt !</p>
-      <h3>Astuce : Installer et configurer Python avec Sublime Text</h3>
-      <p>Sublime Text est un éditeur de texte léger et très populaire pour coder. Voici comment
-l'utiliser pour programmer en Python.</p>
-      <h5>Étape 1 : Télécharge Sublime Text</h5>
-      <p>Va sur le site officiel de Sublime Text : https://www.sublimetext.com/.
-Clique sur "Download" et choisis la version adaptée à ton système d’exploitation (Windows,
-macOS ou Linux).</p>
-      <h5>Étape 2 : Installe Sublime Text</h5>
-      <p>Lance le fichier téléchargé pour démarrer l’installation.
-Suis les étapes de l’assistant d’installation. Une fois terminé, ouvre Sublime Text.</p>
-      <h5>Étape 3 : Configure Sublime Text pour Python</h5>
-      <p>Ajoute Python à Sublime Text :
-Dans Sublime Text, ouvre le menu Tools > Build System > New Build System.
-Un fichier s'ouvre. Remplace son contenu par :
-{
-"cmd": ["python3", "-u", "$file"],
-"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-"selector": "source.python"
-}
-Enregistre le fichier avec le nom « Python3.sublime-build ».
-Choisis Python comme système de build :
-Dans le menu Tools > Build System, sélectionne Python.</p>
-      <h5>Étape 4 : Teste ton installation</h5>
-      <p>Dans Sublime Text, crée un nouveau fichier : File > New File.
-Enregistre-le avec une extension .py (par exemple, test.py).
-Écris le code suivant :
-print("Bienvenue dans Python avec Sublime Text!") # "print sert à écrire dans le résultat"
-# Ce-ci est un commentaire qui n’affecte pas le code on le commande avec un "#"
-Appuie sur Ctrl + B (ou Cmd + B sur macOS) pour exécuter ton programme.
-Si tout est bien configuré, le message apparaîtra dans le panneau de sortie en bas.</p>
-      <h3>Utilisé PIP</h3>
-      <p>Si tu veux utiliser des bibliothèques supplémentaires comme math, pandas ou numpy, utilise
-pip (le gestionnaire de paquets Python).
-Ouvre un terminal ou une invite de commande.
-Tape :
-pip install nom_de_la_bibliothèque
-Par exemple, pour installer pandas :
-pip install pandas
-Exemple : Utiliser une bibliothèque en Python
-Python propose une bibliothèque standard incluse par défaut.
-Exemple simple avec math :
-import math # Importation de la bibliothèque math
-# Utilisation d'une fonction de la bibliothèque
-resultat = math.sqrt(16) # Calcul de la racine carrée de 16
-print(resultat) # Affiche : 4.0
-Exécute ce code dans Sublime Text pour vérifier que tout fonctionne.
-Bibliothèques populaires en Python
-Manipulation des données :
-pandas : Travailler avec des tableaux de données.
-numpy : Manipuler des ensembles de données et faire des calculs mathématiques avancés.
-Graphiques :
-matplotlib et seaborn : Pour tracer des graphiques.
-Développement web :
-flask et django : Pour créer des applications web.
-Jeux :
-pygame : Pour créer des jeux simples en 2D.</p>
-      <h3>Des liens utiles</h3>
-      <h4>Introduction à Python et installation</h4>
-      <p>Site officiel de Python :
-Téléchargement de Python.
-Documentation officielle pour débutants et avancés.
-Real Python :
-Guide pour débutants.
-Tutoriels étape par étape sur l’installation et les bases de Python.
-W3Schools Python :
-Introduction claire avec des exemples interactifs.
-Bonne ressource pour apprendre les bases (print, variables, conditions, boucles).</p>
-      <h4>Apprentissage progressif</h4>
-      <p>FreeCodeCamp Python
-Cours gratuit pour apprendre Python avec des exercices pratiques.
-Programme structuré, idéal pour débutants.
-SoloLearn Python :
-Une application interactive pour apprendre Python en s'amusant.
-Disponible sur mobile et web.
-Codecademy Python :
-Cours interactif avec des exercices de codage en ligne.
-Très accessible pour les débutants (version gratuite et premium).</p>
-      <h4>Exercices pratiques et projets</h4>
-      <p>HackerRank Python :
-Série de défis Python pour pratiquer les bases et résoudre des problèmes.
-Exercism Python :
-Plateforme pour pratiquer des exercices Python et obtenir des retours de mentors.</p>
-      <h4>Documentation et références</h4>
-      <p>GeeksForGeeks Python :
-Des articles détaillés sur les concepts de base et avancés de Python.
-Programiz Python :
-Idéal pour les explications claires sur des sujets comme les conditions, boucles, fonctions et
-listes.
-Python Tutor :
-Un outil visuel pour exécuter et comprendre ton code Python.</p>
-      <h4>Tutoriels vidéo</h4>
-      <p>YouTube - Apprendre Python :
-Chaînes recommandées :
-Graven (pour débutants francophones).
-Tech With Tim (contenu anglophone).
-OpenClassrooms Python :
-Cours complet gratuit sur Python avec une approche progressive.</p>
-      <h5>Ces ressources couvrent l’installation de Python, les bases, la programmation et des
-exercices pratiques.</h5>
-      <h2>Découverte des bases en programmation avec Python :</h2>
-      <h4>Pour commencer fais ceci :</h4>
-      <p>Lance Sublime Text.
-Ouvre un nouveau fichier et sauvegarde-le avec l'extension .py
-(par exemple : premier_programme.py).</p>
-      <h4>Maintenant, écris ce code simple dans ton fichier :</h4>
-      <p># Afficher un message
-        print("Bonjour, le monde !")</p>
-      <h4>Explication :</h4>
-      <p>print : C'est une fonction qui sert à afficher du texte ou des informations à l'écran.
-        Le texte entre guillemets " " est le message que tu veux afficher. Tu peux le personnaliser.
-      # Afficher un message avec un # au début est un commentaire, il n'affecte pas le code.</p>
-      <h4>Exécuter le programme :</h4>
-      <h5>Sauvegarde le fichier avec ctrl+s.
-Exécute le programme en appuyant sur ctrl+b.</h5>
-      <p>Vois, ça affiche Bonjour, le monde !</p>
+        <li>Installer Python et vérifier son installation</li>
+        <li>Configurer Sublime Text pour coder en Python</li>
+        <li>Utiliser pip pour installer des bibliothèques Python</li>
+        <li>Comprendre les variables et types de données</li>
+        <li>Utiliser les conditions (if, elif, else)</li>
+        <li>Maîtriser les boucles (for, while)</li>
+        <li>Créer et utiliser des fonctions</li>
+        <li>Manipuler les listes</li>
+        <li>Utiliser des bibliothèques standards (math, random)</li>
+        <li>Manipuler les fichiers (lecture, écriture, ajout)</li>
+        <li>Exécuter et tester des programmes complets en Python</li>
+      </ul>
     </section>
-  </main>
+
+    <section>
+      <h2>Exemple de code : Premier programme</h2>
+      <div class="code-container">
+        <button class="copy-btn">Copier</button>
+        <pre><code>print("Bonjour, le monde !")</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Installer Python</h2>
+      <div class="code-container">
+        <button class="copy-btn">Copier</button>
+        <pre><code>python --version
+python3 --version</code></pre>
+      </div>
+      <p>Si tu vois une version comme Python 3.13.1, c’est bon !</p>
+    </section>
+
+    <section>
+      <h2>Test rapide dans le terminal</h2>
+      <div class="code-container">
+        <button class="copy-btn">Copier</button>
+        <pre><code>python
+print("Hello, world!")</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Configurer Sublime Text</h2>
+      <p>Fichier de configuration :</p>
+      <div class="code-container">
+        <button class="copy-btn">Copier</button>
+        <pre><code>{
+  "cmd": ["python3", "-u", "$file"],
+  "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+  "selector": "source.python"
+}</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Quiz : Que fait ce code ?</h2>
+      <div class="code-container">
+        <pre><code>print("Bienvenue dans Python avec Sublime Text!")</code></pre>
+      </div>
+      <p>
+        <label><input type="radio" name="q1" value="affiche"> Il affiche un message</label><br>
+        <label><input type="radio" name="q1" value="erreur"> Il génère une erreur</label><br>
+        <label><input type="radio" name="q1" value="rien"> Il ne fait rien</label>
+      </p>
+      <button onclick="verifierQuiz('q1', 'affiche')">Vérifier</button>
+      <p id="resultat-q1" class="resultat"></p>
+    </section>
+
+    <section>
+      <h2>Utiliser une bibliothèque</h2>
+      <div class="code-container">
+        <button class="copy-btn">Copier</button>
+        <pre><code>import math
+resultat = math.sqrt(16)
+print(resultat)</code></pre>
+      </div>
+    </section>
+
+    <section>
+      <h2>Quiz : Quel est le résultat ?</h2>
+      <p>
+        <label><input type="radio" name="q2" value="4"> 4.0</label><br>
+        <label><input type="radio" name="q2" value="16"> 16</label><br>
+        <label><input type="radio" name="q2" value="erreur"> Une erreur</label>
+      </p>
+      <button onclick="verifierQuiz('q2', '4')">Vérifier</button>
+      <p id="resultat-q2" class="resultat"></p>
+    </section>
+
+    <section>
+      <h2>Découverte progressive</h2>
+      <p>Explore les ressources suivantes :</p>
+      <ul>
+        <li><strong>W3Schools Python</strong> – Tutoriels interactifs.</li>
+        <li><strong>FreeCodeCamp Python</strong> – Cours pratique gratuit.</li>
+        <li><strong>SoloLearn Python</strong> – Application mobile d’apprentissage.</li>
+        <li><strong>Codecademy</strong> – Cours interactifs (version gratuite dispo).</li>
+      </ul>
+    </section>
+
     <section>
       <a href="../cours.html">← Retour aux formations</a>
     </section>
+  </main>
 
   <footer>
     <p>© 2025 Tom. Tous droits réservés.</p>
   </footer>
+
+  <script>
+    // Bouton Copier
+    document.querySelectorAll('.copy-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const code = button.nextElementSibling.innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          button.textContent = 'Copié !';
+          setTimeout(() => button.textContent = 'Copier', 1500);
+        });
+      });
+    });
+
+    // Quiz interactif
+    function verifierQuiz(name, bonneReponse) {
+      const radios = document.getElementsByName(name);
+      let reponse = '';
+      for (let i = 0; i < radios.length; i++) {
+        if (radios[i].checked) {
+          reponse = radios[i].value;
+          break;
+        }
+      }
+      const resultat = document.getElementById("resultat-" + name);
+      if (reponse === bonneReponse) {
+        resultat.textContent = "✅ Bonne réponse !";
+        resultat.style.color = "green";
+      } else {
+        resultat.textContent = "❌ Mauvaise réponse. Essaie encore.";
+        resultat.style.color = "red";
+      }
+    }
+  </script>
 </body>
 </html>
