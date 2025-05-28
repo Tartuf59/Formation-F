@@ -5,6 +5,24 @@
   <title>Présentation du site – Formation-F</title>
   <link rel="stylesheet" href="../style.css" />
 </head>
+  <script>
+  const toggleBtn = document.getElementById('darkModeToggle');
+  const body = document.body;
+
+  // Applique la préférence enregistrée
+  if (localStorage.getItem('theme') === 'dark') {
+    body.classList.add('dark-mode');
+    toggleBtn.textContent = '☀️ Mode clair';
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const isDark = body.classList.contains('dark-mode');
+    toggleBtn.textContent = isDark ? '☀️ Mode clair' : '🌙 Mode sombre';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+</script>
+
 <body>
   <header>
     <h1>Présentation du site</h1>
