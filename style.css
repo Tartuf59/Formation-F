@@ -100,8 +100,12 @@ button {
 }
 
 /* Formulaire de contact */
-form {
+.form-container {
   margin-top: 1rem;
+  background-color: #f9fbfd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 input[type="text"],
