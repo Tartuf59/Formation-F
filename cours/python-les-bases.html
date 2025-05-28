@@ -228,7 +228,7 @@ print(15 / 3)</code></pre>
     </ul>
   </div>
 
-  <h3>es variables et les types de données</h3>
+  <h3>Les variables et les types de données</h3>
   <div class="code-container">
     <pre><code class="language-python">nom = "Alice"
 age = 25
@@ -280,17 +280,14 @@ print("Aime Python :", j_aime_python)</code></pre>
   <div class="quiz-container">
     <h4>Quiz rapide :</h4>
     <p>Quel est le type de donnée de la variable suivante ?</p>
-    <pre><code>is_happy = False</code></pre>
-    <ul class="quiz-options">
-      <li><button onclick="checkQuiz(this, 'A')">A. int</button></li>
-      <li><button onclick="checkQuiz(this, 'B')">B. bool</button></li>
-      <li><button onclick="checkQuiz(this, 'C')">C. str</button></li>
-      <li><button onclick="checkQuiz(this, 'D')">D. float</button></li>
-    </ul>
-    <p class="quiz-feedback"></p>
+    <p>
+        <label><input type="radio" name="q2" value="str"> 4.0</label><br>
+        <label><input type="radio" name="q2" value="bool"> 16</label><br>
+        <label><input type="radio" name="q2" value="float"> Une erreur</label>
+      <label><input type="radio" name="q2" value="int"> Une erreur</label>
+      </p>
   </div>
 </section>
-
 <script>
 function checkQuiz(button, answer) {
   const feedback = button.closest('.quiz-container').querySelector('.quiz-feedback');
