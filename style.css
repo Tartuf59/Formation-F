@@ -241,8 +241,5 @@ footer {
     color: black;
     transform: translateY(-2px);
   }
-  .retour-lien:hover,
-.formation-lien:hover {
-  border-color: var(--highlight);
-}
+
 }
