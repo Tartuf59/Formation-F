@@ -223,4 +223,22 @@ footer {
   background-color: var(--text-color);
   color: var(--bg-color);
 }
+   .btn-retour,
+  .btn-formation {
+    display: inline-block;
+    background-color: var(--header-bg);
+    color: var(--header-text);
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .btn-retour:hover,
+  .btn-formation:hover {
+    background-color: var(--highlight);
+    color: black;
+    transform: translateY(-2px);
+  }
 }
